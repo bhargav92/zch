@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div id="register">
+                <h2 align="center">Registration Form</h2>
+                <table border="1" width="400" align="center" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td>UserName</td>
+                        <td><input type="text" name="txtname" id="txtname" placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="txtpwd" id="txtpwd"></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><input type="number" id="txtage" min="15" max="30" value="22"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td><input type="date" name="txtdob" id="txtdob"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="gender" value="Male" id="optmale">Male
+                            <input type="radio" name="radio" value="Female" id="optfemale">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select city</td>
+                        <td>
+                            <select id="lstcity">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="mumbai">mumbai</option>
+                                <option value="chennai">chennai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"></td>
+                        <td><input type="button" value="Register" onclick="Registerclick()"></td>
+                    </tr>
+                </table>
+            </div><br><br>
+            <div id="details" style="dispaly:none">
+                <h2 align="center">Details</h2>
+                <table width="400" border="1" align="center">
+                    <tr>
+                        <td>UserName</td>
+                        <td id="uname"></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td id="age"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td id="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>lstcity</td>
+                        <td id="city"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script>
+        function Registerclick() {
+            document.getElementById("register").style.dispaly = "none";
+            document.getElementById("details").style.dispaly = "block";
+            document.getElementById("uname").innerHTML = document.getElementById("txtname").value;
+            document.getElementById("age").innerHTML = document.getElementById("txtage").value;
+            document.getElementById("dob").innerHTML = document.getElementById("txtdob").value;
+            document.getElementById("city").innerText = document.getElementById("lstcity").value;
+            Male = document.getElementById("optmale");
+            Female = document.getElementById("optfemale");
+            if (Male.checked) {
+                gender = Male.value;
+            }
+            if (Female.checked) {
+                gender = Female.value;
+            }
+            document.getElementById("gender").innerHTML=gender;
+        }
+    </script>
+</body>
+</html>
