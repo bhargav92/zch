@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mergent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .image-gallery
+        {
+            position: absolute;
+			top:30px;
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 770px;
+            background-size: 100% auto;
+            background-position: top center;
+        }
+        .greenImage
+        {
+            background-image: url("image/project1/greenNavBar.png");
+            height:40px;
+            width:887px;
+            margin-top: 15px;
+            float:right;
+            margin-right: -28px;
+        }
+        .search
+        {
+            border: 1px solid #fff;
+            border-radius: 4%;
+            padding: 5px;
+        }
+        .btn
+        {
+            padding: 5px;
+        }
+        .icon-item
+        {
+            padding-right:10px;
+        }
+        a
+        {
+            color:#fff;
+        }
+        .nav li a:hover
+        {
+            background-color: transparent;
+        }
+        .main-top
+        {
+            margin-top: 10px;
+        }
+        .item-head
+        {
+
+            width: 1100px;
+            margin:auto;
+        }
+        .img-black
+        {
+            background-image: url("image/project1/blacktransbg.png");
+            width:887px;
+            height:210px;
+            float:right;
+        }
+        .text-font
+        {
+            font-size: 34px;
+            margin-top: 30px;
+            border-right: 2px solid #054047;
+            font-family: 'brandon_grotesque_lightRg';
+            padding-right:10px;
+            text-transform: uppercase;
+            line-height: 1em;
+            margin-left: 25px;
+        }
+        p
+        {
+            color:#fff;
+        }
+        .para-item
+        {
+            padding-top:25px;
+            padding-left: 45px;
+            font-size: 13px;
+        }
+        .slide-bar
+        {
+            float:right;
+            margin-top:8px;
+        }
+        .margin-slide
+        {
+            width: 1100px;
+            margin: auto;
+        }
+        .bg1
+        {
+            background-color: #232323;
+            width:100%;
+            height:270px;
+
+        }
+        .trans-img
+        {
+            background-image: url("image/project1/transparentBg.png");
+            width:100%;
+            height:100px;
+            border-bottom: 4px solid #00704A;
+        }
+        .whiteBanner li a
+        {
+            color: #00704A;
+            text-transform: uppercase;
+            font-family: 'brandon_grotesque_mediumRg';
+            width: 228px;
+            padding-top: 0px;
+        }
+        .footer li a
+        {
+            margin: 10px 28px;
+            font-family: 'brandon_grotesque_boldregular';
+        }
+        .seperator
+        {
+            background-image: url("image/project1/brownSeparator.png");
+            width:100%;
+            height:4px;
+        }
+        .text-sol
+        {
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+        .text-white
+        {
+            color:#808080;
+        }
+        .text-color
+        {
+            color:#fff;
+        }
+        .footer-item
+        {
+            padding: 25px 15px;
+            font-family: 'brandon_grotesque_regularRg';
+        }
+        .footer-padd
+        {
+            padding-top:25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide image-position" data-ride="carousel">
+    <!-- Indicators -->
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner ">
+            <div class="item active">
+                <img src="image/project1/charlotte.jpg" alt="charlotte">
+            </div>
+
+            <div class="item">
+                <img src="image/project1/frankfurt.jpg" alt="frankfurt">
+            </div>
+
+            <div class="item">
+                <img src="image/project1/london.jpg" alt="New York">
+            </div>
+            <div class="item">
+                <img src="image/project1/charlotte2.jpg" alt="charlotte2">
+            </div>
+            <div class="item">
+                <img src="image/project1/melbourne.jpg" alt="melbourne">
+            </div>
+            <div class="item">
+                <img src="image/project1/newyork.jpg" alt="New York">
+            </div>
+            <div class="item">
+                <img src="image/project1/tokyo.jpg" alt="tokyo">
+            </div>
+
+        </div>
+		<div class="container image-gallery" style="overflow: hidden">
+            <div class="row">
+                <div class="item-head">
+                    <div class="col-md-3">
+                        <img src="image/project1/mergentlogo.png" alt="logo">
+                    </div>
+                    <div class="col-md-4 pull-right main-top">
+                        <div class="col-md-3 icon-item">
+                            <img src="image/project1/header-fb.png" alt="fb">
+                            <img src="image/project1/header-twitter.png" alt="twitter">
+                        </div>
+                        <div >
+
+                            <input type="text" name="name" class="search">
+                            <input type="button" value="Search" class="btn ">
+
+                        </div>
+                        <div class="greenImage col-md-12">
+                            <ul class="nav navbar-nav  ">
+                                <li><a href="#">ABOUT MERGENT</a></li>
+                                <li><a href="#">SOLUTIONS</a></li>
+                                <li><a href="#">DOWNLOADS</a></li>
+                                <li><a href="#">THE MERGENT ADVANTAGE</a></li>
+                                <li><a href="#">CONTACT INFO</a></li>
+                                <li><a href="#">NEWS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-slide">
+                <div class="row">
+                    <div class=" img-black ">
+                        <div class="container-fluid">
+                            <div class="col-md-5 text-font">
+                                <p>creating global financial data solution</p>
+                            </div>
+                            <div class="col-md-6 para-item">
+                                <p>Mergent, Inc. is a leading provider of business and financial information on public and private companies
+                                    globally and has partnered with D&B® to provide several online/print solutions. Based in the U.S, Mergent
+                                    maintains a strong global presence, with offices in New York, Charlotte, San Diego, London, Tokyo, Kuching and
+                                    Melbourne.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slide-bar">
+                        <a href="#"> <img src="image/project1/order.gif" alt="order"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slide-bar">
+                        <a href="#"><img src="image/project1/bluesmart.jpg" alt="blue"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slide-bar">
+                        <a href="#"> <img src="image/project1/lse.gif" alt="blue"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg1">
+    <div class="footer-padd">
+        <div class="trans-img">
+
+            <div class="container">
+                <div class="row">
+                    <p class="text-sol">solutions</p>
+                </div>
+                <div class="row">
+                    <ul class="nav navbar-nav whiteBanner">
+                        <li><a href="#">Academic, corporate, public & gov. libraries</a></li>
+                        <li><a href="#">Equity Research & Analytics</a></li>
+                        <li><a href="#">Corporate Actions & Equity Pricing</a></li>
+                        <li><a href="#">Fixed Income Data</a></li>
+                        <li><a href="#">Data Collection Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="nav navbar-nav footer">
+                <li><a href="#">ABOUT MERGENT</a></li>
+                <li><a href="#">SOLUTIONS</a></li>
+                <li><a href="#">DOWNLOADS</a></li>
+                <li><a href="#">THE MERGENT ADVANTAGE</a></li>
+                <li><a href="#">CONTACT INFO</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="seperator"></div>
+        </div>
+        <div class="container">
+            <div class="footer-item">
+                <div class="col-md-7">
+                    <p class="text-white">&copy 2018 Mergent,Inc. EEO/AA/M/F/Vets/Disabled Privacy Policy | Terms of Use | Disclaimer</p>
+                </div>
+                <div class="col-md-5">
+                    <p><span class="text-color">Customer Relations:</span><span class="text-white"> 1-800-342-5678</span>
+                        <span class="text-color">General Inqueries:</span><span class="text-white"> 1-800-345-8765</span> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
